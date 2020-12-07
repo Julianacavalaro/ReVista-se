@@ -1,0 +1,54 @@
+<!---barra de navegação-->
+
+
+<nav class="navbar navbar-expand-lg  ">
+    <a class="navbar-brand" href="#">(Re)vista-se</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <fa-icon [icon]="faBars" class="fa fa-bars"></fa-icon>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink='/home'>Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/shop'>Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " routerLink='/troca'>Troca</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " routerLink='/lojas'>Nossa Lojas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " routerLink='/clube'>Clube(Re)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " routerLink='/sobre'>Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " routerLink='/blog'>Blog</a>
+            </li>
+            <div class="icone">
+            <fa-icon [icon]="faShoppingCart" class="fa fa-shopping-cart" routerLink ='/carrinho'></fa-icon>
+        </div>
+        </ul>
+        <div *ngIf="!authService.logado()">
+            <a class="btn btn-outline-light mr-2" routerLink="/login">Login</a>
+        </div>
+        <div *ngIf="!authService.logado()">
+            <a class="btn btn-outline-light mr-2" routerLink="/cadastrar">Cadastrar</a>
+        </div>
+        <div *ngIf="authService.logado()">
+            <a class="btn btn-outline-light" (click)="deslogar()">Sair</a>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+    </div>
+</nav>
+
+<!--/Barra de navegação-->

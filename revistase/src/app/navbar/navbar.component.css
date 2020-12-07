@@ -1,0 +1,20 @@
+.navbar{
+    background-color: #FF487E;
+}
+
+.navbar a{
+    text-align: center;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+.fa-shopping-cart, .fa-bars {
+    color: aliceblue;
+    font-size: 1.65em;
+    text-align: center;
+}
+

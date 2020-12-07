@@ -1,0 +1,26 @@
+.container p{
+    font-size: 20px;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
+
+body{
+    background-color: #FFD5BE;
+}
+
+.jumbotron {
+    background-color: #FFD5BE;
+}
+
+.container{
+    margin-bottom: 50px;
+    background-color: #FFD5BE;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

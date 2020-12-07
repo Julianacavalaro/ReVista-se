@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>(Re)Vista-se</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <script src="https://www.paypal.com/sdk/js?client-id=AUzhpLa1c7xpoTNvGQrZBR_fJaXqXSmsElxFWdUugk4r8slUkmR6WXZB6pksVJjY8Ge7UkiaZtfaoMXM&currency=BRL"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+function alerta(){
+  
+  alert('O anunciante recebeu seu interesse em breve entrará em contato!')
+}
+
+  </script>
+</body>
+</html>
